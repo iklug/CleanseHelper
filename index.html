@@ -4,100 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+    </style>
   </head>
   <body>
-    <form action="something">
-      <h1>Payment form</h1>
-      <p>
-        Required fields are followed by <span aria-label="required">*</span>.
-      </p>
+    <div class="fullpage">
+      <!-- start sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <span class="material-symbols-outlined"> dashboard </span>
+        </div>
+        <div class="brand-name">DASHBOARD</div>
+        <div class="symbols">
+          <div><span class="material-symbols-outlined"> home </span></div>
+          <div><span class="material-symbols-outlined"> person </span></div>
+          <div><span class="material-symbols-outlined"> mail </span></div>
+          <div><span class="material-symbols-outlined"> history </span></div>
+          <div><span class="material-symbols-outlined"> task </span></div>
+          <div>
+            <span class="material-symbols-outlined"> diversity_1 </span>
+          </div>
+        </div>
+        <div class="sidebar-options">
+          <div>Home</div>
+          <div>Profile</div>
+          <div>Messages</div>
+          <div>History</div>
+          <div>Tasks</div>
+          <div>Commmunities</div>
+        </div>
+        <div class="symbols">
+          <div><span class="material-symbols-outlined"> settings </span></div>
+          <div>
+            <span class="material-symbols-outlined"> support_agent </span>
+          </div>
+          <div><span class="material-symbols-outlined"> security </span></div>
+        </div>
+        <div class="sidebar-options">
+          <div>Settings</div>
+          <div>Support</div>
+          <div>Privacy</div>
+        </div>
+      </div>
 
-      <section>
-        <h2>Contact Info</h2>
-        <fieldset>
-          <legend>Title</legend>
-          <ul>
-            <li>
-              <label for="title_1">
-                <input
-                  type="radio"
-                  id="title_1"
-                  name="title"
-                  value="K"
-                />King</label
+      <!-- start main content -->
+      <div class="content">
+        <!-- header -->
+        <div class="header">
+          <div class="search">
+            <span class="search-part">
+              <span class="search-logo"
+                ><span class="material-symbols-outlined"> search </span></span
               >
-            </li>
-            <li>
-              <label for="title_2">
-                <input
-                  type="radio"
-                  id="title_2"
-                  name="title"
-                  value="Q"
-                />Queen</label
-              >
-            </li>
-            <li>
-              <label for="title_3">
-                <input type="radio" id="title_3" name="title" value="J" />
-                Joker</label
-              >
-            </li>
-          </ul>
-        </fieldset>
-        <p>
-          <label for="name"
-            ><span>Name:</span><span aria-label="required">*</span></label
-          >
-        </p>
-        <input type="text" id="name" name="username" />
-        <p>
-          <label for="mail"
-            ><span>Email:</span><span aria-label="required">*</span></label
-          ><input type="email" id="mail" name="usermail" />
-        </p>
-        <p>
-          <label for=""><span></span><span></span></label>
-        </p>
-        <p>
-          <label for="pwd"
-            ><span>Password:</span><span aria-label="required">*</span></label
-          ><input type="password" id="pwd" name="password" />
-        </p>
-      </section>
+              <input type="text" placeholder="" />
+            </span>
+          </div>
+          <div class="header-account">
+            <div>
+              <span class="material-symbols-outlined">
+                notifications_active
+              </span>
+            </div>
+            <div><img src="../icons/profile.png" alt="face" /></div>
+            <div>Morgan McStaniss</div>
+          </div>
+        </div>
 
-      <section>
-        <h2>Payment Information</h2>
-        <p>
-          <label for="card"><span>Card type:</span></label>
-          <select name="usercard" id="card">
-            <option value="visa">Visa</option>
-            <option value="mc">Mastercard</option>
-            <option value="amex">American Express</option>
-          </select>
-        </p>
-        <p>
-          <label for="number"><span>Card number:</span><span>*</span></label>
-          <input type="tel" id="number" name="cardnumber" />
-        </p>
-        <p>
-          <label for="expiration"
-            ><span>Expiration date: </span><span>*</span></label
-          >
-          <input
-            type="text"
-            id="expiration"
-            required="true"
-            placeholder="MM/YY"
-            pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$"
-          />
-        </p>
-      </section>
-      <section>
-        <p><button type="submit">Validate Payment</button></p>
-      </section>
-    </form>
+        <!-- main feed -->
+        <div class="feed">
+          <div class="projects"></div>
+          <!-- side feed -->
+          <div class="side-feed"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

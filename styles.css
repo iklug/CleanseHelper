@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  @font-face {
+    font-family: Roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+  }
+  font-family: "Roboto";
+}
+body {
+  margin: 0 5px 0 5px;
+  height: 100%;
+  margin: 0;
+}
+.fullpage {
+  height: 100vh;
+
+  margin: 0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 200px 4fr;
+}
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+  background-color: #38bdf8;
+
+  display: grid;
+  grid-template-rows: 1fr 4fr 4fr 1fr;
+  grid-template-columns: 0.6fr 3fr;
+}
+.content {
+  background-color: #f4f4f5;
+  height: 100%;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: grid;
+
+  grid-template-rows: 1fr 4.5fr;
+  max-width: 1200px;
+}
+.header {
+  background-color: white;
+  box-shadow: 1px 1px 3px lightgrey;
+  display: grid;
+  grid-template-columns: 3.5fr 2fr;
+  grid-template-rows: 1fr 1.5fr;
+}
+.feed {
+  display: grid;
+
+  grid-template-columns: 3fr 1fr;
+}
+.projects {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 1fr 1fr;
+
+  min-width: 400px;
+  max-width: 800px;
+}
+.side-feed {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr 4fr;
+  grid-template-columns: 1fr;
+}
+.logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+}
+.brand-name {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: white;
+  margin-left: 3px;
+}
+.symbols {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 33px;
+  gap: 12px;
+  color: white;
+}
+.sidebar-options {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 35px;
+  margin-left: 3px;
+}
+.sidebar-options div {
+  background-color: inherit;
+
+  width: 150px;
+  height: 40px;
+
+  text-align: left;
+  padding-left: 3px;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+}
+.sidebar-options div:hover {
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.search-part {
+  margin: 20px 0 0 30px;
+
+  height: 50px;
+  display: flex;
+  gap: 5px;
+}
+.search-logo {
+}
+.search-part input {
+  height: 25px;
+  border: none;
+  background-color: #f4f4f5;
+  width: 85%;
+  border-radius: 6px;
+  padding-left: 10px;
+  font-family: "Roboto";
+}
+.header-account {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
